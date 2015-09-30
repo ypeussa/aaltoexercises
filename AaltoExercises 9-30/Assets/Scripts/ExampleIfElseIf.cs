@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Exercise1 : MonoBehaviour {
+public class ExampleIfElseIf : MonoBehaviour {
 
     public float number1;
     public float number2;
