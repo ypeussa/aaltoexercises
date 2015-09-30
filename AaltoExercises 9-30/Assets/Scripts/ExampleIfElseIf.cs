@@ -1,6 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+// You can use this to test the behavior of the if-elseif-else statements.
+// Change the values of the numbers directly from the Unity editor before
+// starting the game.
+
 public class ExampleIfElseIf : MonoBehaviour {
 
     public float number1;
