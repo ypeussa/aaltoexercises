@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Exercise1 : MonoBehaviour {
+public class Exercise5 : MonoBehaviour {
 
     void AddTwo(float number) {
         Debug.Log(number + 2);
