@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-//---
+// Foreach loop
+// First read the code and figure out what this is going to print, and only then run the game to check.
 
 public class LoopExercise3 : MonoBehaviour {
 
