@@ -1,9 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-// For loop for array
+// One more for-loop, this time modifying things.
 // First read the code and figure out what this is going to print, and only then run the game to check.
-// You can change the numbrer value from the editor
 
 public class LoopExercise4 : MonoBehaviour {
 

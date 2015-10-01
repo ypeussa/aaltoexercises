@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-// While loop
+// Basic while-loop.
 // First read the code and figure out what this is going to print, and only then run the game to check.
 
 public class LoopExercise1 : MonoBehaviour {
