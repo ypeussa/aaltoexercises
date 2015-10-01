@@ -11,7 +11,7 @@ using System.Collections;
 // Write conditional statements so that the correct reply is printed
 // for any values the variables have at the moment.
 
-public class Exercise5 : MonoBehaviour {
+public class CondExercise5 : MonoBehaviour {
 
 	public float moneyInPocket = 40000.0f;
 	public bool celebrity = false;

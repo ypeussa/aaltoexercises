@@ -7,7 +7,7 @@ using System.Collections;
 // 
 // First read the code and figure out what this is going to print, and only then run the game to check.
 
-public class Exercise1 : MonoBehaviour {
+public class CondExercise1 : MonoBehaviour {
 
     void Start() {
 

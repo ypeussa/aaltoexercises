@@ -6,7 +6,7 @@ using System.Collections;
 // Modify the 'if' statements so that the output is reasonable.
 // For testing you can adjust the value of "speed" directly from the editor.
 
-public class Exercise4 : MonoBehaviour {
+public class CondExercise4 : MonoBehaviour {
 	public float speed = 90.0f;
 
     void Start() {
