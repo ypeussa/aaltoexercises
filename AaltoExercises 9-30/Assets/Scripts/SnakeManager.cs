@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class SnakeManager : MonoBehaviour {
 
@@ -7,10 +8,16 @@ public class SnakeManager : MonoBehaviour {
     public MovementDirection movementDirection;
 
     public float tickTime = 1.0f; // seconds
-    float timePassed = 0.0f;
+    float timeTowardsNextTick = 0.0f;
 
-    public GameObject snakeBody;
+    // public GameObject snakeBody;
+    public List<GameObject> snakeBodies;
     public GameObject food;
+
+    public void TriggerGameOver()
+    {
+        print("Game over!");
+    }
 
 	// Use this for initialization
 	void Start () {
@@ -19,8 +26,9 @@ public class SnakeManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Debug.DrawLine(snakeBody.transform.position, food.transform.position, Color.yellow);
+        // Debug.DrawLine(snakeBody.transform.position, food.transform.position, Color.yellow);
 
+        // read input - set next movement direction
         if (Input.GetKeyDown(KeyCode.UpArrow)) {
             movementDirection = MovementDirection.Up;
         } else if (Input.GetKeyDown(KeyCode.RightArrow)) {
@@ -31,12 +39,12 @@ public class SnakeManager : MonoBehaviour {
             movementDirection = MovementDirection.Left;
         }
 
-        timePassed += Time.deltaTime;
-        if (timePassed > tickTime) {
+        timeTowardsNextTick += Time.deltaTime;
+        if (timeTowardsNextTick > tickTime) {
             print("Run some game logic");
             MoveSnake();
             MaybeEatFood();
-            timePassed -= tickTime;
+            timeTowardsNextTick -= tickTime;
         }
 	}
 
@@ -44,7 +52,7 @@ public class SnakeManager : MonoBehaviour {
     {
         // check if snake is on top of food
 
-        if (Vector3.Distance(snakeBody.transform.position, food.transform.position) < Mathf.Epsilon)
+        if (Vector3.Distance(snakeBodies[0].transform.position, food.transform.position) < Mathf.Epsilon)
         {
             print("EATING");
             // grow snake body
@@ -61,14 +69,22 @@ public class SnakeManager : MonoBehaviour {
 
     void MoveSnake()
     {
+        Vector3 lastBodyPosition = snakeBodies[0].transform.position;
         if (movementDirection == MovementDirection.Up) {
-            snakeBody.transform.position += new Vector3(0, 0, 1); // Vector3.forward
+            snakeBodies[0].transform.position += new Vector3(0, 0, 1); // Vector3.forward
         } else if (movementDirection == MovementDirection.Right) {
-            snakeBody.transform.position += new Vector3(1, 0, 0); // Vector3.right
+            snakeBodies[0].transform.position += new Vector3(1, 0, 0); // Vector3.right
         } else if (movementDirection == MovementDirection.Down) {
-            snakeBody.transform.position += new Vector3(0, 0, -1); // -Vector3.forward
+            snakeBodies[0].transform.position += new Vector3(0, 0, -1); // -Vector3.forward
         } else { // left
-            snakeBody.transform.position += new Vector3(-1, 0, 0); // -Vector3.right
+            snakeBodies[0].transform.position += new Vector3(-1, 0, 0); // -Vector3.right
+        }
+        
+        for (int i=1; i<snakeBodies.Count; i++)
+        {
+            Vector3 temp = lastBodyPosition;
+            lastBodyPosition = snakeBodies[i].transform.position;
+            snakeBodies[i].transform.position = temp;
         }
     }
 }

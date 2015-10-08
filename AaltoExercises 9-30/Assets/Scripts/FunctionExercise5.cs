@@ -12,6 +12,11 @@ public class FunctionExercise5 : MonoBehaviour {
         print(f);
     }
 
+    void MoveThis(GameObject g)
+    {
+        // moving the object g
+    }
+
     void Start()
     {
         float number = 3.0f;
