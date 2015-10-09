@@ -208,6 +208,21 @@ Transform:
   - {fileID: 1089894103}
   m_Father: {fileID: 1031267328}
   m_RootOrder: 0
+--- !u!1 &179901629 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 171650, guid: 6cc8821443bce49f6a81fb4fea2bd5d4, type: 2}
+  m_PrefabInternal: {fileID: 774728158}
+--- !u!114 &179901630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 179901629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2972e2d5ed5461641951db124c4b5877, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &190850820
 GameObject:
   m_ObjectHideFlags: 0
@@ -297,6 +312,60 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 411786, guid: f1f0bb1476a6b1e439260dc3d1b9dfe2, type: 2}
   m_PrefabInternal: {fileID: 28854735}
+--- !u!1 &276934290 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 138850, guid: 6cc8821443bce49f6a81fb4fea2bd5d4, type: 2}
+  m_PrefabInternal: {fileID: 774728158}
+--- !u!114 &276934291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 276934290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8c15f861720ff946a49c2109ced9123, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  exerciseNoteText: 'This cannon setup is supposed to have a physical bump and an
+    explosion.
+
+    Exercise 3: find and fix the problem, note what the problem was.'
+--- !u!1 &322933306 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 154550, guid: 6cc8821443bce49f6a81fb4fea2bd5d4, type: 2}
+  m_PrefabInternal: {fileID: 774728158}
+--- !u!114 &322933310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 322933306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a772becee4fa3640a941b012a0b6818, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &389093995 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 150610, guid: 6cc8821443bce49f6a81fb4fea2bd5d4, type: 2}
+  m_PrefabInternal: {fileID: 774728158}
+--- !u!114 &389093998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 389093995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8c15f861720ff946a49c2109ced9123, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  exerciseNoteText: 'On this cannon setup there is supposed to be an explosion effect
+    (no physical bump) but it''s not working.
+
+    Exercise 2: find the problem and fix it. (Make a note here about why the setup
+    did not work.)'
 --- !u!1001 &444633123
 Prefab:
   m_ObjectHideFlags: 0
@@ -785,6 +854,26 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 354c6beb88e914261a12cef16bf91819, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &616962270 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 166472, guid: 6cc8821443bce49f6a81fb4fea2bd5d4, type: 2}
+  m_PrefabInternal: {fileID: 774728158}
+--- !u!114 &616962273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 616962270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8c15f861720ff946a49c2109ced9123, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  exerciseNoteText: 'On this cannon setup there is supposed to be both a physical
+    bump reaction and an explosion, but it''s not quite working.
+
+    Exercise 1: find the problem and fix it. (Make a note here about why the setup
+    did not work.)'
 --- !u!1 &619288007
 GameObject:
   m_ObjectHideFlags: 0
@@ -1099,7 +1188,39 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 485502, guid: 6cc8821443bce49f6a81fb4fea2bd5d4, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 429722, guid: 6cc8821443bce49f6a81fb4fea2bd5d4, type: 2}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 446040, guid: 6cc8821443bce49f6a81fb4fea2bd5d4, type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6501254, guid: 6cc8821443bce49f6a81fb4fea2bd5d4, type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 428236, guid: 6cc8821443bce49f6a81fb4fea2bd5d4, type: 2}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 447836, guid: 6cc8821443bce49f6a81fb4fea2bd5d4, type: 2}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 429794, guid: 6cc8821443bce49f6a81fb4fea2bd5d4, type: 2}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 11450634, guid: 6cc8821443bce49f6a81fb4fea2bd5d4, type: 2}
+    - {fileID: 11431742, guid: 6cc8821443bce49f6a81fb4fea2bd5d4, type: 2}
+    - {fileID: 5454232, guid: 6cc8821443bce49f6a81fb4fea2bd5d4, type: 2}
+    - {fileID: 11463488, guid: 6cc8821443bce49f6a81fb4fea2bd5d4, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 6cc8821443bce49f6a81fb4fea2bd5d4, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &844979684
@@ -1468,6 +1589,21 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 453742, guid: 91783cede22f05d4db90d7da3f266d55, type: 2}
   m_PrefabInternal: {fileID: 37276556}
+--- !u!1 &1284090490 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 195978, guid: 6cc8821443bce49f6a81fb4fea2bd5d4, type: 2}
+  m_PrefabInternal: {fileID: 774728158}
+--- !u!114 &1284090494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1284090490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a772becee4fa3640a941b012a0b6818, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1460817541 stripped
 Transform:
   m_PrefabParentObject: {fileID: 436052, guid: 7919a55e229422541aec7ab21d59163f, type: 2}
