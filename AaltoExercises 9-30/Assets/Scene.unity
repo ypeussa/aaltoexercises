@@ -1216,6 +1216,22 @@ Prefab:
       propertyPath: m_RootOrder
       value: 16
       objectReference: {fileID: 0}
+    - target: {fileID: 2327590, guid: 6cc8821443bce49f6a81fb4fea2bd5d4, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5491786, guid: 6cc8821443bce49f6a81fb4fea2bd5d4, type: 2}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19835710, guid: 6cc8821443bce49f6a81fb4fea2bd5d4, type: 2}
+      propertyPath: RotationBySpeedModule.curve.scalar
+      value: .785398126
+      objectReference: {fileID: 0}
+    - target: {fileID: 19835710, guid: 6cc8821443bce49f6a81fb4fea2bd5d4, type: 2}
+      propertyPath: EmissionModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11450634, guid: 6cc8821443bce49f6a81fb4fea2bd5d4, type: 2}
     - {fileID: 11431742, guid: 6cc8821443bce49f6a81fb4fea2bd5d4, type: 2}
